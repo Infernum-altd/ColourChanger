@@ -16,20 +16,12 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({ Key key }) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   Color color = Color.fromARGB(0, 0, 0, 0); // initialize start colour
-  bool _didInitState = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _didInitState = true;
-  }
 
   ///Function which generate and return random Colour
   Color generateRandomColour() {
